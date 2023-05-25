@@ -7,7 +7,7 @@ require("./utils/db");
 
 const app = express();
 const port = process.env.PORT || 5000;
-const auth = require("./middleware/auth");
+// const auth = require("./middleware/auth");
 // const login = require("./routes/login");
 const dosen = require("./routes/dosen");
 
@@ -29,7 +29,7 @@ app.use("/api/uploads", express.static(uploads));
 app.use("/api/dosen", dosen);
 
 // user must login first
-app.use(auth);
+// app.use(auth);
 
 // protected routes
 // app.use("/api/dosen", dosen);

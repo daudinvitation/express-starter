@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const mongourl = process.env.MONGOURL || "mongodb://127.0.0.1:27017/dosen";
+const mongourl = process.env.MONGOURL || "mongodb://127.0.0.1:27017/dosenjere";
 
 // connect to mongodb
 mongoose.connect(mongourl, {

@@ -14,7 +14,9 @@ const verifyToken = (req, res, next) => {
       const decoded = jwt.verify(token, secretToken);
       req.user = decoded;
     } catch {
-      return res.status(401).json({ message: "Maaf, anda tidak diijinkan mengakses halaman ini" });
+      return res
+        .status(401)
+        .json({ message: "Maaf, anda tidak diijinkan mengakses halaman ini" });
     }
   } catch {
     return res.status(401).json({ message: "Maaf, file tidak ditemukan" });
