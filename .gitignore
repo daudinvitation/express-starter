@@ -1,4 +1,12 @@
-node_modules/
+node_modules
 .env
-dist/
-uploads/imgs/*
+uploads/foto/*
+uploads/pendidikan/*
+uploads/jabatan/*
+uploads/pangkat/*
+uploads/arsipSkp/*
+uploads/kgb/*
+uploads/lhkasn/*
+uploads/dokumenPenting/*
+uploads/absen/*
+debug.log
